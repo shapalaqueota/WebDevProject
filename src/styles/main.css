@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+
+body {
+  font-family: "Pixelify Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.highlight-text {
+  font-weight: 700;
+  color: rgba(0, 255, 0, 1);
+}
+
+.highlight-text:hover {
+  font-weight: 400;
+  color: rgb(255, 0, 0);
+}

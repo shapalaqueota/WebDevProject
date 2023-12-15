@@ -1,0 +1,52 @@
+.carousel-container {
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.carousel-container h1 {
+  color: lime;
+  align-items: left;
+}
+
+.carousel-container p {
+  text-align: center;
+}
+
+/* Стили для слайдера */
+.slick-slider {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#about {
+  color: white;
+  text-align: left;
+}
+
+#desc {
+  text-decoration: underline;
+  text-shadow: 2px 1px 1px lime;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-container h1 {
+    color: lime;
+    align-items: left;
+    font-size: 125%;
+  }
+
+  .slick-slider {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+}

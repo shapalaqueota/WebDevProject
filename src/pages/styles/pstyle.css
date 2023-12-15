@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.projects-container {
+  margin-top: 20px;
+  background-color: black;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Заголовок справа */
+.right-heading {
+  text-align: left;
+  color: lime;
+}
+
+.project-item {
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.project-item:hover {
+  background-color: lime;
+  cursor: pointer;
+}
+
+/* Изображение проекта */
+.project-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Заголовок проекта */
+.project-title {
+  font-weight: bold;
+  margin-top: 10px;
+  color: white;
+}
+
+.project-language {
+  color: red;
+  font-weight: 400;
+}

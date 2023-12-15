@@ -1,0 +1,16 @@
+.contacts-container {
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#heading {
+  color: lime;
+}
+
+#info {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  text-shadow: 2px 1px 1px lime;
+}

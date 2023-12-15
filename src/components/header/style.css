@@ -1,0 +1,121 @@
+/* Стили для консоли */
+.header {
+  background-color: black; /* Черный фон для заголовка */
+  height: 100vh; /* На весь экран */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.console {
+  background-color: black; /* Цвет фона консоли */
+  color: lime; /* Цвет текста */
+  padding: 20px;
+  border: 2px solid lime; /* Граница для эффекта консоли */
+}
+
+.console-header {
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: 2px solid lime;
+}
+
+.console-title {
+  font-weight: 500;
+}
+
+.close_icon {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.close_icon span {
+  margin: 0 10px; /* Задает отступы по горизонтали между элементами */
+}
+
+.output {
+  margin-bottom: 10px;
+  border-bottom: 1px solid lime; /* Граница для разделения вывода и ввода */
+  padding-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-container span {
+  color: lime;
+  margin-right: 5px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinking {
+  animation: blink 1.5s step-start infinite;
+  font-weight: 800;
+}
+
+ul {
+  list-style-type: "- ";
+}
+
+/* style.css */
+
+.download-text-container {
+  max-height: px; /* Максимальная высота контейнера */
+  overflow-y: auto;
+  margin-bottom: 25px;
+}
+
+.download-text:hover {
+  background-color: lime;
+}
+
+.download-text {
+  display: flex;
+  flex-direction: row; /* Располагаем элементы в ряд */
+  justify-content: center; /* Равномерно распределяем пространство между элементами */
+  color: white; /* Цвет текста */
+  padding: 5px 0; /* Отступы сверху и снизу между элементами */
+}
+
+.download-text span {
+  flex: 1;
+}
+
+.highlight-download:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .download-text-container {
+    padding-top: 150px;
+  }
+  .download-text {
+    flex-direction: row; /* Изменяем направление на вертикальное */
+    flex-wrap: wrap;
+  }
+
+  .download-text span {
+    flex: none; /* Убираем растягивание */
+    text-align: center;
+    width: 25%; /* Занимаем всю ширину контейнера */
+  }
+}
