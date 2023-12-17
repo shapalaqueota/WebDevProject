@@ -1,7 +1,7 @@
 const Sandbox = () => {
   return (
     <>
-      <h1>Hello epta</h1>;
+      <h1>Sandboxich</h1>;
     </>
   );
 };
