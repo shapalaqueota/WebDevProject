@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./styles/pdetails.css";
+import withLogger from "../components/lifecycleLogger/withLogger";
 
 const ProjectDetailsPage = () => {
   const { projectName } = useParams();
@@ -81,4 +82,4 @@ const ProjectDetailsPage = () => {
   );
 };
 
-export default ProjectDetailsPage;
+export default withLogger(ProjectDetailsPage);

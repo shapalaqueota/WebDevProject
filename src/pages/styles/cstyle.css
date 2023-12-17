@@ -14,3 +14,33 @@
   color: white;
   text-shadow: 2px 1px 1px lime;
 }
+
+.console-form {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.console-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.console-form input[type="text"],
+.console-form input[type="email"],
+.console-form textarea {
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: #333;
+  border: 1px solid #555;
+  color: #fff;
+}
+
+.console-form button {
+  padding: 8px 20px;
+  background-color: #00ff00;
+  color: #000;
+  cursor: pointer;
+}

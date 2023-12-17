@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 import Contacts from "./pages/Contacts";
 import "./styles/main.css";
+import Sandbox from "./pages/Sandbox";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             element={<ProjectDetailsPage />}
           />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="/sanbox" element={<Sandbox />} />
         </Routes>
         <Footer />
       </div>

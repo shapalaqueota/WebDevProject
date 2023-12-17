@@ -9,8 +9,10 @@ const Navbar = () => {
   return (
     <BootstrapNavbar bg="black" data-bs-theme="dark" className="custom-navbar">
       <Container>
-        <BootstrapNavbar.Brand href="#home">
-          Final<span className="highlight-text">EXAM</span>.exe
+        <BootstrapNavbar.Brand>
+          <Nav.Link as={Link} to="/">
+            Final<span className="highlight-text">EXAM</span>.exe
+          </Nav.Link>
         </BootstrapNavbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link as={Link} to="/">
@@ -22,7 +24,9 @@ const Navbar = () => {
           <Nav.Link as={Link} to="/contacts">
             Contacts
           </Nav.Link>
-          <Nav.Link href="#pricing">Course</Nav.Link>
+          <Nav.Link as={Link} to="/sandbox">
+            Sandbox
+          </Nav.Link>
         </Nav>
       </Container>
     </BootstrapNavbar>
