@@ -5,8 +5,8 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 import Contacts from "./pages/Contacts";
-import "./styles/main.css";
 import Sandbox from "./pages/Sandbox";
+import "./styles/main.css";
 
 function App() {
   return (

@@ -1,10 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import "./style.css"; // Путь к вашему файлу стилей
+import "./style.css";
 
 const Header = () => {
   const handleDownload = () => {
-    // Создаем ссылку на файл
     const url =
       "https://docs.google.com/document/d/1R5By-sd33SwmCR3i7xOJT2Vybjtsdc8r/edit?usp=sharing&ouid=109304152039866458517&rtpof=true&sd=true";
 
@@ -81,10 +80,10 @@ const Header = () => {
             </ul>
           </div>
           <div className="input-container">
-            <a>
+            <span>
               &gt; type...
               <span className="blinking">|</span>
-            </a>
+            </span>
           </div>
         </div>
       </Container>

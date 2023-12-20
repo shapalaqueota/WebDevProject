@@ -1,17 +1,36 @@
-/* Стили для консоли */
 .header {
-  background-color: black; /* Черный фон для заголовка */
-  height: 100vh; /* На весь экран */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .console {
-  background-color: black; /* Цвет фона консоли */
-  color: lime; /* Цвет текста */
+  background-color: black;
+  color: lime;
   padding: 20px;
-  border: 2px solid lime; /* Граница для эффекта консоли */
+  border: 2px solid lime;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 0, 0.7)); /* Фильтр для виньетки */
+}
+
+.console:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 1px,
+    lime 2px,
+    lime 3px
+  );
+  z-index: -1;
+  opacity: 0.1;
+  pointer-events: none;
+  animation: noise 3s infinite linear alternate;
 }
 
 .console-header {
@@ -19,10 +38,43 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
   background-color: black;
-  color: white;
+  color: rgb(0, 255, 0);
   padding: 10px;
   border: 2px solid lime;
+  filter: drop-shadow(0 0 10px rgba(0, 255, 0, 0.5));
+}
+
+.console-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 1px,
+    lime 2px,
+    lime 3px
+  );
+  z-index: -1;
+  opacity: 0.1;
+  pointer-events: none;
+  animation: noise 3s infinite linear alternate;
+}
+
+@keyframes noise {
+  0% {
+    transform: translateY(-1px);
+  }
+  100% {
+    transform: translateY(1px);
+  }
 }
 
 .console-title {
@@ -36,12 +88,12 @@
 }
 
 .close_icon span {
-  margin: 0 10px; /* Задает отступы по горизонтали между элементами */
+  margin: 0 10px;
 }
 
 .output {
   margin-bottom: 10px;
-  border-bottom: 1px solid lime; /* Граница для разделения вывода и ввода */
+  border-bottom: 1px solid lime;
   padding-bottom: 10px;
 }
 
@@ -76,10 +128,8 @@ ul {
   list-style-type: "- ";
 }
 
-/* style.css */
-
 .download-text-container {
-  max-height: px; /* Максимальная высота контейнера */
+  max-height: 100%;
   overflow-y: auto;
   margin-bottom: 25px;
 }
@@ -90,10 +140,10 @@ ul {
 
 .download-text {
   display: flex;
-  flex-direction: row; /* Располагаем элементы в ряд */
-  justify-content: center; /* Равномерно распределяем пространство между элементами */
-  color: white; /* Цвет текста */
-  padding: 5px 0; /* Отступы сверху и снизу между элементами */
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  padding: 5px 0;
 }
 
 .download-text span {
@@ -105,17 +155,28 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+  .console {
+    padding: 10px;
+    font-size: 14px;
+    border-width: 1px;
+  }
+
+  .console-header {
+    padding: 5px;
+    font-size: 16px;
+  }
+
   .download-text-container {
     padding-top: 150px;
   }
   .download-text {
-    flex-direction: row; /* Изменяем направление на вертикальное */
+    flex-direction: row;
     flex-wrap: wrap;
   }
 
   .download-text span {
-    flex: none; /* Убираем растягивание */
+    flex: none;
     text-align: center;
-    width: 25%; /* Занимаем всю ширину контейнера */
+    width: 25%;
   }
 }

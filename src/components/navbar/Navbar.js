@@ -11,7 +11,7 @@ const Navbar = () => {
       <Container>
         <BootstrapNavbar.Brand>
           <Nav.Link as={Link} to="/">
-            Final<span className="highlight-text">EXAM</span>.exe
+            TheFinals
           </Nav.Link>
         </BootstrapNavbar.Brand>
         <Nav className="mr-auto">
