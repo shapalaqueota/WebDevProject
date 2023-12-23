@@ -1,0 +1,42 @@
+.blogPage {
+  background-color: #000000; /* Зеленый цвет фона */
+  color: #00ff00; /* Цвет текста */
+  padding: 20px;
+}
+
+.post {
+  border: 1px solid #00ff00; /* Рамка для каждого поста */
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #000000; /* Цвет фона поста */
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.title h1 {
+  font-size: 1.5em; /* Размер заголовка */
+  color: #00ff00; /* Цвет заголовка */
+}
+
+.deletePost button {
+  border: none;
+  color: #ffffff; /* Цвет иконки удаления поста */
+
+  cursor: pointer;
+}
+
+.deletePost button:hover {
+  color: #ff5050; /* Цвет иконки удаления при наведении */
+}
+
+.postTextContainer {
+  margin-top: 10px;
+}

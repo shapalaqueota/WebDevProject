@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import { Navbar as BootstrapNavbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import logo from "./Frame 1.svg";
 import "./style.css";
 
 const Navbar = () => {
@@ -11,7 +12,8 @@ const Navbar = () => {
       <Container>
         <BootstrapNavbar.Brand>
           <Nav.Link as={Link} to="/">
-            TheFinals
+            <img className="logo" src={logo} alt="logo" /> <br />
+            Finals
           </Nav.Link>
         </BootstrapNavbar.Brand>
         <Nav className="mr-auto">
@@ -24,8 +26,8 @@ const Navbar = () => {
           <Nav.Link as={Link} to="/contacts">
             Contacts
           </Nav.Link>
-          <Nav.Link as={Link} to="/sandbox">
-            Sandbox
+          <Nav.Link as={Link} to="/blog">
+            Blog
           </Nav.Link>
         </Nav>
       </Container>
